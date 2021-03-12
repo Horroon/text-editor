@@ -1,0 +1,85 @@
+.Editor{
+    width: 100%;
+    border: 1px solid gray;
+    height: auto;
+    .EditorHeader{
+        border-bottom: 2px solid #73797b3d;
+        & div{
+            line-height: 1;
+            display:flex;
+            justify-content: space-around;
+            width: 500px;
+            height: 59px;
+            div{
+                height: inherit;
+                width: auto;
+                & h3{
+                    cursor: pointer;
+                };
+                & [class="colorPalette"] {
+                    display: grid;
+                    height: auto;
+                    position: absolute;
+                    padding: 10px;
+                    width: 120px;
+                    background: blueviolet;
+                    & [class="colorHead"] {
+                        height: 20px;
+                        color: white;
+                        & h5{
+                            margin: 0;
+                        }
+                        & i{
+                            margin-top: -9px;
+                            margin-right: -14px;
+                            cursor: pointer;
+                        }
+                    }
+                    & [class="colors"] {
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-content: space-between;
+                        justify-content: space-between;
+                        padding-top: 10px;
+                        width: 100%;
+                        & [class="colordv"] {
+                            width: 20px;
+                            margin: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                };
+                & [class="highlight"] {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background: #80808061;
+                    border-radius: 3px;
+                };
+                & [class='Link'] {
+                    display: flex;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    & input{
+                        border: none !important;
+                        padding: 3px;
+                    }
+                    & button{
+                        border: none !important
+                    }
+                }
+            }
+        }
+    }
+    
+    .Editorbody{
+        width: inherit;
+        & [class="textareadv"] {
+         border: none;
+         padding: 10px;
+         padding-top: 1px;
+         &:focus {
+             outline: none !important;
+         }   
+        }
+    }
+}
